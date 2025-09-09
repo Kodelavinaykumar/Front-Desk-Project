@@ -48,5 +48,7 @@ class KnowledgeItem(Base):
     question = Column(Text, nullable=False, index=True)
     answer = Column(Text, nullable=False)
     source_request_id = Column(Integer, ForeignKey("help_requests.id"), nullable=True)
+    # Optional cache field to store combined text for vectorization
+    search_text = Column(Text, nullable=True)
 
     source_request = relationship("HelpRequest")
