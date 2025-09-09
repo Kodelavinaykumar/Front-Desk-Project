@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+
+# Environments
+.venv/
+.env
+
+# SQLite DB
+frontdesk.db
+
+# Logs
+*.log
+
+# IDE/Editor
+.vscode/
+.idea/
